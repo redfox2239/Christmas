@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoKakuGothic.ttc">
+            <string>HiraginoSans-W6</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Christmas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snow" translatesAutoresizingMaskIntoConstraints="NO" id="FMZ-Uf-h24">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="imy-b0-Cd6">
+                                <rect key="frame" x="93.5" y="592" width="187.5" height="35"/>
+                                <color key="backgroundColor" red="0.16230776411380321" green="0.65182820431472077" blue="0.29126185324775422" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="lFj-ej-N5p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                <state key="normal" title="メリークリスマス？">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ボタン押したらどうするぅ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWZ-5x-xDx"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chrismas" translatesAutoresizingMaskIntoConstraints="NO" id="m2O-kv-fdT">
+                                <rect key="frame" x="-0.5" y="123.5" width="375" height="420"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メリー・メリークリスマス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsJ-jw-Fqc">
+                                <rect key="frame" x="38" y="74.5" width="299.5" height="25"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="25"/>
+                                <color key="textColor" red="0.9165807423857868" green="0.31592961648944123" blue="0.18374724549372787" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m2O-kv-fdT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8K3-Bv-9Qk"/>
+                            <constraint firstItem="m2O-kv-fdT" firstAttribute="top" secondItem="nsJ-jw-Fqc" secondAttribute="bottom" constant="24" id="KrI-Bc-UVo"/>
+                            <constraint firstItem="FMZ-Uf-h24" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WVw-Wk-u5h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FMZ-Uf-h24" secondAttribute="bottom" id="cVK-i1-aqE"/>
+                            <constraint firstItem="imy-b0-Cd6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cs9-JH-CBx"/>
+                            <constraint firstItem="nsJ-jw-Fqc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fZM-xv-eEe"/>
+                            <constraint firstItem="FMZ-Uf-h24" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hCI-WS-hkA"/>
+                            <constraint firstItem="imy-b0-Cd6" firstAttribute="width" secondItem="FMZ-Uf-h24" secondAttribute="width" multiplier="0.5" id="nOn-js-6yS"/>
+                            <constraint firstItem="m2O-kv-fdT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oel-YC-YpP"/>
+                            <constraint firstItem="m2O-kv-fdT" firstAttribute="width" secondItem="FMZ-Uf-h24" secondAttribute="width" id="uM3-xy-JG0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="imy-b0-Cd6" secondAttribute="bottom" constant="40" id="wJy-2l-dy9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FMZ-Uf-h24" secondAttribute="trailing" id="zCF-WC-5JV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="クリスマス画像" destination="m2O-kv-fdT" id="2ZZ-8g-MeR"/>
+                        <outlet property="メリーメリークリスマスのラベル" destination="nsJ-jw-Fqc" id="wG4-5m-cfl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Chrismas" width="410" height="420"/>
+        <image name="snow" width="183" height="275"/>
+    </resources>
+</document>
